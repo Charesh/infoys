@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>document</h1>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        margin: 30px;
+        background-color: rgb(230, 212, 197);
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $(document).keypress(function(){
+            $("body").append("<h1>infosystem</h1>");
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="window">
+        <h1>J-Query</h1>
+        <p>it is used in front-end</p>
+        <button id="close">
+            x
+        </button>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #window{
+        width: 30%;
+        height: 100px;
+        margin: 30px auto;
+        border: 2px solid black;
+        background-color: rgb(190, 210, 228);
+        box-shadow: 2px 8px 10px black;
+        position: relative;
+    }
+    #close{
+        background-color: azure;
+        width: 25px;
+        height: 25px;
+        margin-top: -58px;
+        margin-left: 110px;
+        position: absolute;
+        border: none;
+        color: black;
+        border: 2px solid red;
+        cursor: pointer;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("#close").click(function(){
+            
+            $("#window").hide();
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <h1>J-Query is used through library</h1>
+    </div>   
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        text-align: center;
+        background-color: aliceblue;
+    }
+    .div1{
+        padding: 5px;
+        background-color: rgb(252, 243, 232);
+        text-align: center;
+        border: 2px solid salmon;
+        height: 200px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .div2{
+        padding: 5px;
+        background-color: rgb(252, 243, 232);
+        text-align: center;
+        border: 2px solid salmon;
+        height: 200px;
+        margin-left: 20px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        // Select the div with class div1 and attach a double click event handler
+        $(".div1").dblclick(function(){
+            // Toggle the class div2 on the selected div
+            $(this).toggleClass("div2");
+        });
+    });
+</script>
+</html>

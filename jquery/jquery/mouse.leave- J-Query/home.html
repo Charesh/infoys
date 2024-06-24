@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div id="win"></div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cornsilk;
+    }
+    #win{
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+    }
+</style>
+<script>
+$(document).ready(function() {
+    $('#win').mouseenter(function() {
+        $(this).css('background-color', 'red');
+    });
+    $('#win').mouseleave(function() {
+        $(this).css('background-color', 'blue');
+    });
+});
+</script>
+</html>

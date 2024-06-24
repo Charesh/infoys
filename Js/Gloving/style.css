@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    padding: 50px;
+    margin-bottom: 10%;
+    animation-name: anime;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anime
+
+{
+    100%{
+        transform: rotate(360deg);
+
+    }   
+}
+button{
+    border-radius: 20px;
+    padding: 15px;
+    background-color: bisque;
+    color: blueviolet;
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+}

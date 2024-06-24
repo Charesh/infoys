@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>mangodb</li>
+        <li>react js</li>
+    </ul>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(32, 31, 31);
+        color: aliceblue;
+    }
+</style>
+<script>
+    $(document).ready(
+        function(){
+            $('li').hover(
+                function(){
+                    $(this).append('<b>*****</b>');
+                },
+                function(){
+                    $(this).find('b:last').remove();
+                }
+            )
+        }
+    )
+</script>
+</html>

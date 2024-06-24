@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keypress</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>keypress</h1>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        text-align: center;
+        background-color: antiquewhite;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 40px;
+        text-transform: uppercase;
+        color: red;
+        letter-spacing: 2px;
+    }
+
+</style>
+<script>
+$(document).ready(
+    function(){
+        $(document).keypress(
+            function(event){
+                $("h1").text(event.which);
+            }
+        );
+    }
+)
+</script>
+</html>
